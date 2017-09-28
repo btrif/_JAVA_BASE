@@ -1,0 +1,14 @@
+Doubly Linked List (non-graded activity)
+
+Read carefully the provided code (all the classes).
+
+We changed the class Node, adding an attribute with a reference to the previous node (prev).
+The class MyDoublyLinkedList stores as attributes head (a reference to the beginning of the doubly linked list),
+and tail (a reference to the end of the doubly linked list).
+
+Implement the missing methods in order to extract from the beginning,
+extract from the end and delete all the nodes whose info is identical to the one passed as parameter.
+Remember to update the values of tail and head accordingly.
+
+The solution will be published at the end of the week.
+Meanwhile, you can discuss your solution at the forum.

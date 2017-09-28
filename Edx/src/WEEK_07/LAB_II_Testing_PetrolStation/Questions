@@ -1,0 +1,20 @@
+Testing PetrolStation (non graded activity)
+
+In this laboratory, we will continue working with the FuelTank and Car classes.
+In addition, PetrolStation class has been added, which is similar to GasStation class,
+but it adds more functionality and simulates the fuel dispenser,
+by filling the tank liter by liter, called fuelQuantum.
+
+Using the Codeboard tool below, you must:
+
+1.  Define and add the preconditions and postconditions for the fillEuros(Car car, double amountEuros)
+method in the PetrolStation class.
+
+2.  Implement in a new class, e.g. PetrolStationTest,
+test cases to cover all paths in the fillEuros(Car car, double amountEuros) method:
+- Enter once in the for loop, once for the if conditional part and once for the else part.
+- Enter once in the for loop and else conditional part.
+
+3.  Program the JUnit Test Case class for the Car class, CarTest.java, to test all class's methods.
+4.  Program the integration testing, in which the car travels, but it does not have enough fuel.
+So the tank must be filled. Print the amount of euros that the customer spends.

@@ -1,0 +1,8 @@
+
+== OVERRIDING
+Defining a method in a subclass with the same name, return type and parameters that another one in the parent class
+is called overriding.
+
+== OVERLOADING
+Defining a method in a class with the same name, return type but different list of parameters than another one in the same class
+is called overloading.

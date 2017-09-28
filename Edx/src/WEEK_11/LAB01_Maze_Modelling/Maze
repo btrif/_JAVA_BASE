@@ -1,0 +1,167 @@
+Objective: Model the Maze
+
+In this project you will model a maze using a bidimensional array.
+
+You will also model a path through a maze using a doubly-linked list.
+
+The following project contains the necessary classes and methods to complete.
+
+It is highly recommended that you can save your work,
+so that you can continue working on it in different sessions.
+In order to do so, you need either to register to get an account in Codeboard
+or to download the code files to work on your own computer.
+
+
+
+ ___________________________________
+
+
+ Enum types
+
+ An enum type is a special data type that enables for a variable to be a set of predefined constants.
+ When declaring a variable of an enum type, such variable is forced to have one of the values defined
+ in the enum type itself.
+
+ Examples of enum types could be:
+
+ the directions of a compass (NORTH, SOUTH, EAST, and WEST);
+ the days of the week (SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY);
+ the months of the year (JANUARY, FEBRUARY, ..., DECEMBER);
+ the sex (MALE, FEMALE);
+ the assessment grades;
+ the planets of the Solar System;
+ the chemical elements in the periodic table;
+ etc.
+ The simplest definition of an enum type just lists the set of constants. For example:
+
+
+ public enum Sex {
+     MALE, FEMALE
+ }
+ However, the enum type allows complementing each of the constants with suplementary information too.
+
+ For example, the laboratory project code defines two enum types: MazeStatus and Movement.
+
+ The MazeStatus enum type represents the possible states of a given cell in the maze,
+ being OPEN for a clear position, OBSTACLE for a wall,
+ GOAL for the position containing the objective and VISITED for marking explored positions.
+ Each of these constants has an associated character as complementary data, useful for printing the Maze.
+
+
+ public enum MazeStatus {
+
+   OPEN(' '), OBSTACLE('#'), GOAL('x'), VISITED('.');
+
+   private char text;
+
+   MazeStatus(char s) {
+     this.text = s;
+   }
+
+   public char text() {
+     return this.text;
+   }
+
+ }
+ The Movement enum type in the laboratory defines the movements that are allowed in the maze.
+ Each movement has as associated data its text representation (to facilitate its printing)
+ and the corresponding vertical and horizontal shifts (to facilitate futher calculations).
+
+ public enum Movement {
+
+   LEFT('<', 0, -1), UP('^', -1, 0), RIGHT('>', 0, 1), DOWN('v', 1, 0);
+
+   private char text;
+   private int vShift;
+   private int hShift;
+
+   Movement(char s, int vShift, int hShift) {
+     this.text = s;
+     this.vShift = vShift;
+     this.hShift = hShift;
+   }
+
+   // ...
+
+ }
+
+_________________________________________________
+
+
+Part 1: Modeling the Maze as a Bidimensional Array
+
+In this exercise you will model a maze using a bidimensional array.
+
+The Maze class contains a bidimensional array as attribute, so that each cell in the array corresponds
+to a position in the maze.
+Each position has a status, to choose between the values listed in the MazeStatus enum type
+(see previous explanation).
+
+The Maze class must provide:
+
+A constructor to generate a new maze based on its dimensions with all its positions OPEN.
+A constructor to generate a new maze from a String-based representation (already programmed).
+The method getPosStatus for checking the status of a position in the maze (i.e. cell in the array)
+given its coordinates.
+The method setPosStatus for changing the status of a position in the maze (i.e. cell in the array)
+given its coordinates and the new state.
+The method toString to represent the maze as a String so that it can be shown on screen.
+The method stringToMaze, which generates a maze with each line of text representing a row of the maze,
+and each character in a line the status of the corresponding position in such row and column.
+Use the project skeleton provided above to program the Maze class.
+
+(Methods getNeighbourCoords and followPath included in the skeleton will be programmed in next exercises.
+You do not need to code them now).
+
+Part 2: Modeling the Maze: Array Limits
+
+Program the getNeighbourCoords method in the Maze class.
+
+The getNeighbourCoords method calculates the coordinates of the destination position in the Maze
+given a starting position (row, col) and a Movement (mov).
+
+It must return the coordinates of the destination position, but only if it is a valid one.
+If the destination position is outside the limits of the array, it returns null.
+
+Use the project skeleton provided above to program the required method in the Maze class.
+
+The Movement enum type is already programmed in the provided code.
+It represents the possible movements (up, down, left, right), together with their associated data:
+the vertical and horizontal shifts associated to the movement and a char for displaying it in an intuitive way
+for the user.
+
+(Method followPath included in the skeleton will be programmed in next exercises.
+You do not need to code it yet).
+
+Part 3: Modeling a Path as a Doubly Linked List
+
+In this exercise you will model a path through a maze using a doubly linked list.
+
+The Path class is a doubly linked list of PathStep nodes that represents a sequence of steps in the Maze.
+It contains a reference to the first and last steps
+
+The PathStep class is already programmed in the provided code.
+
+You must complete the Path class, providing:
+
+A constructor to initialize an empty Path (already programmed).
+Methods for inserting a new step at the beginning of the list (insertFirst) and at the end (insertLast).
+Methods for extracting a step from the beginning of the list (extractFirst) and from the end (extractLast).
+The method toString to represent the Path as a String so that it can be shown on screen.
+Use the project skeleton provided above to program the Path class.
+
+Part 4: Following a Path Through a Maze
+
+Program the followPath method in the Maze class.
+
+The followPath method traverses the given Path changing the state of the maze positions that it visits:
+
+If the initial status of the position to visit is OPEN or VISITED (i.e. valid position to step into),
+changes it to VISITED.
+If the initial status of the position to visit is GOAL, it is considered a valid movement,
+but it does not change the status of the position so that the goal keeps displaying in the maze.
+If the initial status of the position to visit is OBSTACLE or the position is outside the limits of the Maze,
+it is an invalid move and the method must finish immediately.
+The followPath method empties the received path as it traverses it.
+
+Use the project skeleton provided above to program the required method in the Maze class.

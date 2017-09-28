@@ -1,0 +1,16 @@
+STEP 4: Modeling Characters. What Do They Have in Common?
+
+Object Encapsulation
+
+STEP 4: Modeling Characteres. What Do They Have in Common? (Non graded Activity)
+
+In this lab we will see how to model the different characters of our story: on one hand the hero,
+who will have to go through the maze, and on the other hand the allies and enemies that he will
+find along the way as it seeks its goal.
+
+During the modeling process we will analyze what properties and behaviors have different characters in common,
+and which of them are specific to each type of character.
+From this information, we will learn how to create an inheritance hierarchy,
+and how this mechanism can help us to reduce lines of code and make our programs easier to maintain.
+
+(Click on the next tab in the top bar to start)
