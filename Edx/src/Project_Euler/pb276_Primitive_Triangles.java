@@ -104,7 +104,7 @@ public class pb276_Primitive_Triangles {
 //        for (int a=0 ; a<= 1e3 ; a++){
 //            System.out.println(a);
 //        }
-        int up_range = (int) 1000 ;
+        int up_range = (int) 10000000 ;
 
         pb276_Primitive_Triangles BF = new pb276_Primitive_Triangles() ;
         BF.brute_force(up_range);

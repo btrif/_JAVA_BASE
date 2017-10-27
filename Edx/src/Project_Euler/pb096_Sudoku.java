@@ -4,6 +4,9 @@ package Project_Euler;
 
 
 
+import org.codehaus.groovy.runtime.powerassert.SourceText;
+
+import javax.sound.midi.Soundbank;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -241,7 +244,13 @@ public class pb096_Sudoku {
         System.out.println("\n Completed in  " + (System.nanoTime() - t2)/1e6 + "  ms" );
 
         System.out.println("\nThe complete path of the file : \t"+ fin);
+
+        int[] fac = {1,2, 3, 4} ;
+        System.out.println(Int_Array_to_String(fac, "." ) );
     }
+
+
+
 }
 
 
