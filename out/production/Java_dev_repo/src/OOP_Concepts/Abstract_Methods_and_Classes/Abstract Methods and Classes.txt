@@ -1,0 +1,17 @@
+            === ABSTRACT CLASSES AND METHODS =====
+
+- A class with at least one abstract method is called "abstract class".
+- So an abstract method is a method without the body.
+- Constructors, static methods, and final methods cannot be abstract.
+- An abstract class is a class where some methods are abstract, and some are not.
+- An abstract class is somehow an unfinished class, and we cannot instantiate it into objects.
+- An abstract class can be extended to a class, but also to another abstract class.
+- You could define a class as abstract  even without having any abstract method. you might want to do this
+ to prevent the possibility of instantiating the class.
+- However, if there's an abstract method, you will get an error if you don't add the keyword "abstract"
+to the class definition
+- So abstract methods are useful ways in order not to over-specify.
+They help us to delay the definition of the behavior of a method.
+- And abstract classes are these unfinished classes that hold abstract methods.
+
+- !!! If a class inherits an ABSTRACT class then it must override all its methods !!!

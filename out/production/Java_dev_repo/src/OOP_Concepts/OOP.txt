@@ -1,0 +1,51 @@
+Week 4 Summary
+
+We are near the end!
+
+In the previous weeks we worked with variables, which are responsible for keeping the state in a program, and methods,
+which allow us to carry out the same actions repeatedly based on the input parameters they receive.
+In this fourth week we have put variables and methods together into a single entity called object.
+Objects are the basis of object-oriented languages, such as Java,
+and open the door to a new paradigm of programming called object-oriented programming.
+Objects have state, stored in their variables (also known as attributes or fields),
+and behavior through their methods (also known as functions).
+A common way to understand state and behavior is what the object has (state) and what the object can do (behavior).
+Objects of the same kind (or of the same class) share the same behavior but can differ in their state;
+they have the same methods and attributes but the values stored in their attributes may be different.
+
+Classes are the patterns to create objects.
+We structure the code of classes in attributes and methods and then we create objects (or instances)
+using special methods in the classes called constructors and the keyword new.
+The process of creating objects is also known as instantiation.
+The concept of class is very much related to the concept of type which we have seen throughout this course
+with examples such as int, boolean or double, among others.
+We can have simple attributes that store values of primitive type,
+but we can also have complex attributes that store objects of a class.
+
+Attributes store information which can be very sensitive to the proper functioning of our program.
+We need to watch out that this information is not accessed or modified without permission.
+We can control access and modification through different levels that affect the visibility of the elements in a class.
+In this week we have seen two examples: we can hide elements in a class using the keyword private
+and we can expose them through the keyword public.
+It is normally a good practice to define attributes as private, while methods,
+at least those intended to be used by others, are normally defined as public.
+The access to attributes is not normally done directly but through special methods called getters and setters.
+Moreover, attributes can be of different nature: instance attributes (or instance variables)
+where each object of the same class has its own attribute;
+class attributes (or class variables) where all the objects of the same class share the same attribute,
+and constants, which cannot change their values throughout the program.
+
+Designing good object-oriented programs is a prerequisite before you start coding.
+In many cases we have objects that are quite similar but that have some specific attributes and/or methods.
+In that case we can benefit from the properties of inheritance in Java.
+Thanks to the properties of inheritance we can arrange all the common attributes and methods
+of a set of objects in a superclass (generalization) and implement those specific attributes and methods
+in a subclass (particularization).
+This allows us to reuse code since the attributes and methods of our superclass are inherited by the subclasses;
+so we do not need to code them again, and our program behaves in a more modular and efficient manner.
+But remember, one class can only extend from one superclass in Java!
+
+Powerful concepts surround inheritance as we have seen in this week:
+overriding (not to be mistaken for overloading), upcasting/downcasting, and static/dynamic binding are only a few of them.
+Take your time to understand these concepts, practicing them through the exercises and the lab of this week.
+We will keep working with classes, objects and inheritance in the next week.
