@@ -29,7 +29,8 @@ public class test_Toy {
 
 /**
  Abstract classes cannot be instantiated. Thus, we cannot create a new Toy() object.
- Abstract classes contains at least one method without code, there is no problem in the definition of the Toy class.
+ Abstract classes contains at least one method without code,
+    there is no problem in the definition of the Toy class.
  As the play method is declared abstract it must contain no code.
  The TeddyBear and ToyCar classes extend the Toy class.
  In consequence, they have to either implement the play method or be abstract themselves.

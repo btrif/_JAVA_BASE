@@ -2,24 +2,30 @@
 
 - An abstract class has some methods that are abstract, and some that are not,
 - Now, the question is what if we make all methods abstract.
+
 - But a class with all methods abstract is not an abstract class anymore. It is something different.
 - If all the methods are abstract, we call it an interface.
+
 - Notice that there are no bodies in all of the methods.
 - Actually, we don't write the keyword abstract for the methods,
 but there's no confusion since all methods are abstract in an interface.
+
 - Further, we can declare the methods as public, but we don't need to write this explicitly.
 - So all methods are automatically declared as public, even if we don't write the keyword public.
 - Well, it is not actually completely true that all the methods have to be abstract in an interface.
 - Since Java 8, released March 2014, there can be methods with a body,but they have to be static or default.
-- But we will not complicate you at this moment in order to highlight the concept of an interface in its purest form.
+- But we will not complicate you at this moment in order to highlight the concept of an interface
+in its purest form.
 - So for you, in an interface, all methods are abstract.
 - So what about attributes? There can be attributes in an interface.
 But all are automatically static and final. That is, they are constants.
 - They are also automatically public, so the public keyword need not be explicitly specified.
 - So the concept of an interface is a useful design abstraction.
+
 - An interface as the physical interface in a radio or music player exhibits a service to the outside and hides
 the implementation we might define.
-- As a matter of fact, we might change this implementation without changing the interface, and so the services we provide.
+- As a matter of fact, we might change this implementation without changing the interface,
+and so the services we provide.
 - In summary, in an interface, all methods are abstract.
 - All methods are abstract. Well, except for some static and default methods we have not talked about
 and that will be seen elsewhere.

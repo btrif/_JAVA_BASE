@@ -16,10 +16,10 @@ public class generic_classes {
 //    list2.add("Integer");
 //    Integer value2 = list2.get(0);
 
-    ArrayList<E> list = new ArrayList<E>();
-    list.add("a");
-    list.add(1);
-    list.add(4.0);
-    Object value = list.get(0);
+//    ArrayList<E> list = new ArrayList<E>();
+//    list.add("a");
+//    list.add(1);
+//    list.add(4.0);
+//    Object value = list.get(0);
 
 }

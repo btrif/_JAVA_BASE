@@ -72,13 +72,13 @@ public class pb223_Almost_right_angled_triangles_I {
 
         double t1 = System.nanoTime() ;
 
-        System.out.println("\nAlmost-right angled triangles : " + almost_brute_force(25000000) );
-//        System.out.println("\nAlmost-right angled triangles : " + almost_brute_force(20000) );
+//        System.out.println("\nAlmost-right angled triangles : " + almost_brute_force(250000) );
+        System.out.println("\nAlmost-right angled triangles : " + almost_brute_force(20000) );
 
-        System.out.println("\nCompleted in  " + (System.nanoTime() - t1)/1e6 + "  ms" );
+        System.out.println("\nCompleted in  " + (System.nanoTime() - t1)/1e9 + "  s" );
 
     }
-//    Almost-rght angled triangles : 37347
+//   lim = 25.000 --> Almost-rght angled triangles : 37347
 //    Completed in  360.858535  ms
 
 

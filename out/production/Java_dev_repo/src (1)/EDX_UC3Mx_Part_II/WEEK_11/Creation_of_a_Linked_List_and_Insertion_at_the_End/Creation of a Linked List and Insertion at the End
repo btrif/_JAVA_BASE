@@ -1,0 +1,19 @@
+Creation of a Linked List and Insertion at the End (non-graded activity)
+
+Read carefully the provided code (all the classes).
+
+First of all, create a linked list in the main method (class CreateLinkedList) inserting
+several elements at the beginning of the list. Print the list afterwards.
+
+Then, implement a new method called insertEnd(E info) in the class MyLinkedList that inserts elements
+at the end of the list. First of all, check if the list is empty.
+If so, the first node will be the one created with the information received as argument in insertEnd(E info).
+If the list is not empty, you should traverse it until the last node,
+appending the node created with the information received as argument in insertEnd(E info).
+
+In order to check if your method is correct,
+create another linked list in the main method (class CreateLinkedList) inserting
+ several elements at the end of this list. Print this list afterwards.
+
+The solution will be published at the end of the week. Meanwhile,
+you can discuss your solution at the forum.

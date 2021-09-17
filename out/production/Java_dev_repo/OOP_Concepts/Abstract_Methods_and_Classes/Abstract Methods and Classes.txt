@@ -2,6 +2,7 @@
 
 - A class with at least one abstract method is called "abstract class".
 - So an abstract method is a method without the body.
+
 - Constructors, static methods, and final methods cannot be abstract.
 - An abstract class is a class where some methods are abstract, and some are not.
 - An abstract class is somehow an unfinished class, and we cannot instantiate it into objects.

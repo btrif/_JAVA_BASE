@@ -2,13 +2,16 @@ Week 4 Summary
 
 We are near the end!
 
-In the previous weeks we worked with variables, which are responsible for keeping the state in a program, and methods,
+In the previous weeks we worked with variables,
+which are responsible for keeping the state in a program, and methods,
 which allow us to carry out the same actions repeatedly based on the input parameters they receive.
 In this fourth week we have put variables and methods together into a single entity called object.
 Objects are the basis of object-oriented languages, such as Java,
 and open the door to a new paradigm of programming called object-oriented programming.
+
 Objects have state, stored in their variables (also known as attributes or fields),
 and behavior through their methods (also known as functions).
+
 A common way to understand state and behavior is what the object has (state) and what the object can do (behavior).
 Objects of the same kind (or of the same class) share the same behavior but can differ in their state;
 they have the same methods and attributes but the values stored in their attributes may be different.
@@ -27,6 +30,7 @@ We need to watch out that this information is not accessed or modified without p
 We can control access and modification through different levels that affect the visibility of the elements in a class.
 In this week we have seen two examples: we can hide elements in a class using the keyword private
 and we can expose them through the keyword public.
+
 It is normally a good practice to define attributes as private, while methods,
 at least those intended to be used by others, are normally defined as public.
 The access to attributes is not normally done directly but through special methods called getters and setters.

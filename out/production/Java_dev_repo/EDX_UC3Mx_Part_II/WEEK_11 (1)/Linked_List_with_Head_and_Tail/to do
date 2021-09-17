@@ -1,0 +1,16 @@
+Linked List with Head and Tail (non-graded activity)
+
+Read carefully the provided code (all the classes).
+
+We changed the name of the attribute first to head and we added another attribute,
+tail. head is a reference to the first node of the linked list,
+while tail is a reference to the last node of the linked list.
+
+Implement the missing methods in order to insert at the beginning and at the end,
+and to extract from the beginning and from the end.
+Remember to update the values of tail and head accordingly.
+
+You can check your code using the provided  main.
+
+The solution will be published at the end of the week.
+Meanwhile, you can discuss your solution at the forum.

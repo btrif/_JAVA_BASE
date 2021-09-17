@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="algs4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/ALGORITHMS_DATA_STRUCTURES_Princetone/algs4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
